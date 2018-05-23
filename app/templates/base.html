@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- 基础模板 -->
+<html>
+<head>
+    <!-- 通过jinja2模板的渲染，若无title传过来，则执行else，否则执行if语句，注意jinja2模板的控制语句都要有end-->
+    {% if title %}
+    <title>{{title}} - microblog</title>
+    {% else %}
+    <title>Welcome to microblog</title>
+    {% endif%}
+</head>
+<body>    
+    <div>Microblog:<a href="/index">Home</a></div>
+    <hr>
+    <!-- 设置flash显示区域（这里有点蒙）
+         若messages存在就一行行的打印出来，否则不执行
+         注意嵌套关系，以及end语句
+     -->
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock%}
+</body>
+</html>
