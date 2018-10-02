@@ -1,5 +1,4 @@
-# 初始化
-
+# -*- coding:utf-8 -*-
 from flask import Flask
 
 # 创建一个Flask对象，并修改此对象的config

@@ -104,3 +104,6 @@ ENV/
 *.pyc
 *.egg
 .idea
+
+# vscode
+.vscode
