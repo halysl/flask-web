@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <!-- 基础模板 -->
 <html>
+    <header>
+        {% if title %}
+        <title>{{title}} - microblog</title>
+        {% else %}
+        <title>Welcome to microblog</title>
+        {% endif %}
+    </header>
 <body>
     {% block content %}{% endblock%}
 </body>
