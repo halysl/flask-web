@@ -1,5 +1,5 @@
-# -*- xodinf:utf-8 -*-
+# -*- coding:utf-8 -*-
 
 from app import app
 #以debug模式启动flask框架
-app.run()
+app.run(debug=True)
