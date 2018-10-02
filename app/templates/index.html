@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<!-- 主页，继承自base.html -->
 {% extends "base.html" %}
-<!-- block content内写入自己的内容-->
+
 {% block content %}
 <h1>Hi,{{user.nickname}}</h1>
 {% for post in posts %}

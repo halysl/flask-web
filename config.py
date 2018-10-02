@@ -1,6 +1,4 @@
-'''
-配置文件
-'''
+# -*- coding:utf-8 -*-
 
 #防止CSRF跨站攻击
 CSRF_ENABLED = True
