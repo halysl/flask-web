@@ -1,26 +1,11 @@
 [[source]]
+name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
-name = "pypi"
 
 [dev-packages]
-pylint = "<2.0.0"
-"autopep8" = "*"
 
 [packages]
-flask = "*"
-flask-login = "*"
-flask-openid = "*"
-flask-mail = "*"
-flask-sqlalchemy = "*"
-flask-migrate = "*"
-flask-whooshalchemy = "*"
-flask-wtf = "*"
-flask-babel = "*"
-guess-language = "*"
-flip = "*"
-flipflop = "*"
-coverage = "*"
 
 [requires]
-python_version = "2.7"
+python_version = "3.7"
